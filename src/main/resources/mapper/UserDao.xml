@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.ibigsea.bootdao.mapper.UserMapper" >
+<mapper namespace="com.hu.dao.UserDao" >
 
-    <insert id="save" parameterType="com.ibigsea.bootdao.entity.User">
+    <insert id="save" parameterType="User">
         insert into user(name,age) values(#{name,jdbcType=VARCHAR},#{age,jdbcType=NUMERIC})
     </insert>
 
-    <select id="selectById" resultType="com.ibigsea.bootdao.entity.User">
+    <select id="selectById" resultType="User">
         select * from user where id = #{id,jdbcType=NUMERIC}
     </select>
 
-    <update id="updateById" parameterType="com.ibigsea.bootdao.entity.User">
+    <update id="updateById" parameterType="User">
         update user set
         name = #{name,jdbcType=VARCHAR} ,
         age = #{age,jdbcType=NUMERIC}
@@ -21,7 +21,7 @@
         delete from user where id = #{id,jdbcType=NUMERIC}
     </delete>
 
-    <select id="queryAll" resultType="com.ibigsea.bootdao.entity.User">
+    <select id="queryAll" resultType="User">
         select * from user
     </select>
 

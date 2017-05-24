@@ -1,4 +1,4 @@
-package com.hu.domain.entity;
+package com.hu.domain;
 
 /**
  * Created by hu on 2017/5/24.

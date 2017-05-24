@@ -1,7 +1,8 @@
 package com.hu.dao;
 
 import com.hu.Application;
-import com.hu.domain.entity.User;
+import com.hu.domain.User;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 /**
  * Created by hu on 2017/5/24.
  */
+//@Ignore
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = {Application.class})
 public class UserDaoTest {

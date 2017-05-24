@@ -1,12 +1,14 @@
 package com.hu.dao;
 
-import com.hu.domain.entity.User;
+import com.hu.domain.User;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
 /**
  * Created by hu on 2017/5/24.
  */
+@Mapper
 public interface UserDao {
 
     int save(User user);
