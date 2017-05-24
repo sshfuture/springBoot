@@ -34,3 +34,6 @@ spring:
       connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
       # 合并多个DruidDataSource的监控数据
       #useGlobalDataSourceStat: true
+mybatis:
+  mapperLocations: classpath*:com/ibigsea/bootdao/mapper/*.xml
+  typeAliasesPackage: com.ibigsea.bootdao.entity
