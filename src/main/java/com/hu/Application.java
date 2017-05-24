@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @SpringBootApplication
-//@EnableTransactionManagement
 public class Application {
+
     @RequestMapping("/")
     @ResponseBody
     String home() {
